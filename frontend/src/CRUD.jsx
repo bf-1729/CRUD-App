@@ -80,7 +80,7 @@ const CRUD = () => {
               type='text'
               placeholder='Enter value'
             />
-            <button className='relative lg:left-60 left-40 bg-teal-600 py-2 lg:py-2.5 px-8 hover:bg-black text-white'>Add</button>
+            <button className='relative lg:left-60 left-40 bg-teal-600 py-2 lg:py-2.5 lg:px-11 px-8 hover:bg-black text-white'>Add</button>
           </form>
         </div>
         <div className='border-2 border-gray-700 h-fit'>
