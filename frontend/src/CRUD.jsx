@@ -87,7 +87,7 @@ const CRUD = () => {
           {data.map((item, index) => (
             <div className='flex justify-between items-center bg-white py-1 lg:w-full w-full border-t-1 border-b-2 border-gray-300' key={item._id}>
               <p className='pl-4'>{index + 1}.</p>
-              <p className='break-all font-sans pl-7 lg:text-[1rem] text-sm lg:w-3/4 w-10/12'>{item.name}</p>
+              <p className='break-all font-sans lg:pl-7 pl-2 lg:text-[1rem] text-sm lg:w-3/4 w-10/12'>{item.name}</p>
               <div className='flex'>
                 <p
                   className='w-12 text-left p-2 cursor-pointer text-red'
