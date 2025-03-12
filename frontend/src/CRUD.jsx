@@ -68,26 +68,26 @@ const CRUD = () => {
   };
 
   return (
-    <div className='bg-gray-800 text-black'>
-      <div className='flex flex-col items-center gap-9 pt-16 h-screen'>
+    <div className=' text-black lg:w-full'>
+      <div className='flex flex-col items-center lg:gap-9 gap-4 pt-16 h-screen'>
         <h1 className='text-white lg:text-2xl text-xl font-semibold'>CRUD APP</h1>
         <div>
-          <form onSubmit={handler} className='flex lg:justify-center justify-center items-center'>
+          <form onSubmit={handler} className='lg:w-screen flex flex-row lg:justify-center items-center'>
             <input
               onChange={(e) => setName(e.target.value)}
               value={name}
-              className='absolute left-8 lg:left-[27.8%] lg:w-[484px] w-[66.5%] lg:h-11 h-10 pl-2 px-2 outline-none'
+              className='lg:w-4/12 w-80 lg:h-11 h-10 font-sans pl-2 px-2 outline-none'
               type='text'
               placeholder='Enter value'
             />
-            <button className='relative lg:left-60 left-40 bg-teal-600 py-2 lg:py-2.5 lg:px-11 px-8 hover:bg-black text-white'>Add</button>
+            <button className='bg-teal-600 py-2 lg:py-2.5 lg:px-11 px-8 hover:bg-black text-white font-sans'>Add</button>
           </form>
         </div>
-        <div className='border-2 border-gray-700 h-fit'>
+        <div className='border-2 lg:w-6/12 w-11/12 border-gray-700 h-fit'>
           {data.map((item, index) => (
-            <div className='flex justify-between items-center bg-white py-1 w-100 lg:w-[600px] border-t-1 border-b-2 border-gray-300' key={item._id}>
+            <div className='flex justify-between items-center bg-white py-1 lg:w-full w-full border-t-1 border-b-2 border-gray-300' key={item._id}>
               <p className='pl-4'>{index + 1}.</p>
-              <p className='lg:w-[480px] w-80 break-all pl-7 lg:text-[1rem] text-sm'>{item.name}</p>
+              <p className='break-all font-sans pl-7 lg:text-[1rem] text-sm lg:w-3/4 w-10/12'>{item.name}</p>
               <div className='flex'>
                 <p
                   className='w-12 text-left p-2 cursor-pointer text-red'
