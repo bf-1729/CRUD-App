@@ -76,7 +76,7 @@ const CRUD = () => {
             <input
               onChange={(e) => setName(e.target.value)}
               value={name}
-              className='lg:w-4/12 w-72 lg:h-11 h-10 font-sans pl-2 px-2 outline-none'
+              className='lg:w-4/12 w-64 lg:h-11 h-10 font-sans pl-2 px-2 outline-none'
               type='text'
               placeholder='Enter value'
             />
