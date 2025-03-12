@@ -76,11 +76,11 @@ const CRUD = () => {
             <input
               onChange={(e) => setName(e.target.value)}
               value={name}
-              className='lg:w-4/12 w-80 lg:h-11 h-10 font-sans pl-2 px-2 outline-none'
+              className='lg:w-4/12 w-72 lg:h-11 h-10 font-sans pl-2 px-2 outline-none'
               type='text'
               placeholder='Enter value'
             />
-            <button className='bg-teal-600 py-2 lg:py-2.5 lg:px-11 px-8 hover:bg-black text-white font-sans'>Add</button>
+            <button className='w-fit bg-teal-600 py-2 lg:py-2.5 lg:px-11 px-6 hover:bg-black text-white font-sans'>Add</button>
           </form>
         </div>
         <div className='border-2 lg:w-6/12 w-11/12 border-gray-700 h-fit'>
